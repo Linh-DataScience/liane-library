@@ -5,7 +5,6 @@ A very basic personal library management app built with **Python**, **Streamlit*
 ---
 
 ## Features
-
 - **Inventory** — View all books and registered borrowers at a glance
 - **Add Book** — Add new books (title + author) to your collection
 - **Add Friend** — Register friends who can borrow books
@@ -15,7 +14,6 @@ A very basic personal library management app built with **Python**, **Streamlit*
 ---
 
 ## Tech Stack
-
 | Layer     | Technology                          |
 |-----------|-------------------------------------|
 | Frontend  | [Streamlit](https://streamlit.io)   |
@@ -26,7 +24,6 @@ A very basic personal library management app built with **Python**, **Streamlit*
 ---
 
 ## Database Schema
-
 Three tables connected by foreign keys:
 
 ```
@@ -42,20 +39,17 @@ The SQL dump with sample data (German classics + test borrowers) is in `src/lian
 ## Getting Started
 
 ### 1. Clone the repository
-
 ```bash
 git clone https://github.com/<your-username>/lianes-library.git
 cd lianes-library
 ```
 
 ### 2. Install dependencies
-
 ```bash
 pip install -r requirements.txt
 ```
 
 ### 3. Set up the database
-
 Make sure MySQL is running locally, then import the schema and sample data:
 
 ```bash
@@ -63,7 +57,6 @@ mysql -u root -p < src/liane_library.sql
 ```
 
 ### 4. Set up environment variables
-
 Copy the example file and fill in your credentials:
 
 ```bash
@@ -82,7 +75,6 @@ DB_NAME=liane_library
 > ⚠️ Never commit the `.env` file — it's already listed in `.gitignore`.
 
 ### 5. Run the app
-
 ```bash
 streamlit run liane.py
 ```
@@ -92,7 +84,6 @@ The app will open in your browser at `http://localhost:8501`.
 ---
 
 ## Project Structure
-
 ```
 LianesLibrary_Project/
 ├── liane.py              # Main Streamlit app
@@ -107,7 +98,6 @@ LianesLibrary_Project/
 ---
 
 ## Sample Data
-
 The database comes pre-loaded with a few books and borrowers to get started:
 
 **Books:** Der Alchemist, Der kleine Prinz, Homo Faber, Die unendliche Geschichte, Siddhartha
@@ -116,4 +106,4 @@ The database comes pre-loaded with a few books and borrowers to get started:
 
 ---
 
-*Built as a personal project for Liane. 🌸*
+
